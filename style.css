@@ -1,0 +1,42 @@
+body {
+    font-family: Adobe Arabic;
+    font-size: 24pt;
+    direction: rtl;
+}
+
+.book-container {
+	border: 73px solid transparent;
+    padding: 15px;
+    border-image-source: url(images/border.png);
+    border-image-slice: 73;
+    border-image-repeat: repeat;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	background-color: #F7FCE3;
+}
+
+.verse-marker {
+    vertical-align: super;
+    font-size: 75%;
+}
+
+.chapter-marker {
+    float: right;
+    font-size: 200%;
+}
+
+.q1 {
+    margin-right: 2em;
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+}
+
+.q2 {
+    margin-right: 4em;
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+}
+
+h1, h2 {
+    text-align: center;
+}
