@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>ترکمن اينجيل</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+<div id="dark-screen" onclick="hideFeedbackContainer()"></div>
+<div id="feedback-container" onclick="stopEvent()"">
+  <div>
+    <form>
+      <textarea id="messageContent">test</textarea>
+      <a href="javascript:sendFeedback()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </a>
+    </form>  
+  </div>
+</div>
+
+<div class="button-container">
+
+  <a href="#" onclick="displayFeedbackScreen()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+  </a>
+
+  <a href="mailto:turkmeninjil@gmail.com">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+  </a>
+
+</div>
+    
+<div class="book-container">
+
+
+  <p>Etc.</p>
+
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAM3H_pYXHLo1o4nwrToOJyA_v0cgWt6Ug",
+    authDomain: "turkmen-injil-f679c.firebaseapp.com",
+    projectId: "turkmen-injil-f679c",
+    storageBucket: "turkmen-injil-f679c.appspot.com",
+    messagingSenderId: "1005450804019",
+    appId: "1:1005450804019:web:eabe8c0b4651fc521c5c46",
+    measurementId: "G-48SX2EFH48"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  firebase.firestore();
+</script>
+
+
+</body>
+</html>
