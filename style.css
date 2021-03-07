@@ -91,6 +91,7 @@ h1, h2 {
     height: 90%;
     margin: 1em auto;
     border: thin solid black;
+    padding: 0.75em;
 }
 
 #dark-screen, #feedback-container {
@@ -120,4 +121,11 @@ h4 {
     margin-right: 2%;
     font-size: 1em;
     font-family: serif;
+}
+
+body > p {
+    font-size: 0.8em;
+    text-align: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
