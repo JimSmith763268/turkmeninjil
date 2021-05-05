@@ -40,3 +40,29 @@ function hideFeedbackContainer() {
 function stopEvent() {
     event.stopPropagation();
 }
+
+function scrollToChapter(selectObject) {
+    if( selectObject.value == "top" ) {
+        window.scroll(0,0);
+        hideNavbar();
+    } else {
+        document.getElementById(selectObject.value).scrollIntoView();
+    }
+}
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos && currentScrollPos != 0) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    hideNavbar();
+  }
+  prevScrollpos = currentScrollPos;
+  document.getElementById("list").value = "";
+} 
+
+function hideNavbar() {
+    document.getElementById("navbar").style.top = "-" + document.getElementById("navbar").offsetHeight + "px";
+}

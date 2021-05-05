@@ -129,3 +129,51 @@ body > p {
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
+
+#navbar {
+    background-color: #5d7238; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    color: white;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #navbar-container > * {
+    align-self: center;
+  }
+
+  /* Style the navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+
+  #navbar a > svg {
+      fill: white;
+      width: 0.75em;
+      height: 0.75em;
+  }
+
+  select {
+      font-size: 20px;
+  }
+
+  .sep {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
